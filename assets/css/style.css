@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -7,7 +5,8 @@ body {
 }
 
 .navbar {
-    width: 250px; /* Reduced width of the navigation bar */
+    width: 250px;
+    /* Reduced width of the navigation bar */
     position: fixed;
     top: 20px;
     left: 10px;
@@ -19,13 +18,16 @@ body {
 
 
 .navbar img {
-    width: 80%; /* Adjusted to fit within the narrower navigation bar */
-    height: auto; /* Maintain aspect ratio */
+    width: 80%;
+    /* Adjusted to fit within the narrower navigation bar */
+    height: auto;
+    /* Maintain aspect ratio */
     display: block;
 }
 
 .navbar-header p {
-    font-size: 12px; /* Adjusted font size */
+    font-size: 15px;
+    /* Adjusted font size */
     margin-bottom: 20px;
     color: #aaa4a4;
     padding-left: 15px;
@@ -47,7 +49,8 @@ body {
 .navbar-menu a {
     text-decoration: none;
     color: #000;
-    font-size: 18px; /* Adjusted font size */
+    font-size: 18px;
+    /* Adjusted font size */
 }
 
 .navbar-menu a:hover {
