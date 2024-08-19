@@ -1,21 +1,20 @@
 body {
-    font-family: 'Kulim Park';
+    font-family: 'Kulim Park', sans-serif;
 }
 
 .navbar {
-    height: 90%;
-    margin-top: 30px;
-    width: 250px;
-    max-width: 15%; 
+    height: 90vh; /* 90% of the viewport height */
+    margin-top: 2vh;
+    width: 15vw; /* 15% of the viewport width */
+    max-width: 250px;
     position: fixed;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    border-right: #e4e2e2 solid 0.75px;
-    padding-left: 10px; 
-    padding-right: 10px; 
+    border-right: 1px solid #e4e2e2; /* Used 1px for consistency across devices */
+    padding: 0 1rem; /* Responsive padding */
     overflow-x: hidden;
 }
 
@@ -25,40 +24,39 @@ body {
     display: block;
 }
 
-.navbar-header a:hover {
-    cursor: pointer; 
-    color: #496178;
-}
-
 .navbar-header {
-    font-size: 14px;
+    font-size: 1rem; /* Scales with user settings */
     color: #aaa4a4;
     width: 100%;
-    margin-left: 20%; 
-    
+    margin-left: 1rem; /* Margin adjusted for consistency */
 }
+
 .navbar-header a {
     text-decoration: none;
     color: #aaa4a4;
 }
 
+.navbar-header a:hover {
+    cursor: pointer; 
+    color: #496178;
+}
 
 .navbar-menu {
     list-style-type: none;
     padding-left: 0;
     width: 100%;
     text-align: left;
-    margin-left: 20%;
+    margin-left: 1rem; /* Adjusted for responsiveness */
 }
 
 .navbar-menu li {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem; /* Relative unit for spacing */
 }
 
 .navbar-menu a {
     text-decoration: none;
     color: #000;
-    font-size: 18px;
+    font-size: 1.125rem; /* Slightly larger, scales with user settings */
 }
 
 .navbar-menu a:hover {
@@ -66,34 +64,29 @@ body {
     font-weight: bold;
 }
 
-
-.nav-tab-page {
+.nav-tab-page, .home-page {
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
+    padding: 1rem;
     display: none;
     text-align: justify;
     text-justify: inter-word;
-    max-width: 65%;
-    font-size: 16px;
+    max-width: 65vw; /* 65% of the viewport width */
+    font-size: 1rem;
     color: #484d52;
     font-weight: 200;
-    font-style: normal;
+}
+
+.home-page {
+    display: block;
 }
 
 .nav-tab-page h1 {
-    font-size: 50px;
+    font-size: 3rem; /* Scales with viewport size */
 }
 
-.home-page{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    text-align: justify;
-    text-justify: inter-word;
-    max-width: 65%;
-    color: #484d52;
+.nav-tab-page p {
+    line-height: 1.5;
 }
 
 .footer-icons {
@@ -105,70 +98,69 @@ body {
     display: flex;
     justify-content: space-evenly; 
     align-items: center;
-    gap: 1px;
+    gap: 0.5rem;
 }
 
 .footer-icons .fa {
-    font-size: 20px; 
+    font-size: 1.25rem; /* Scales with user settings */
     color: rgb(49, 47, 47); 
     text-decoration: none;
 }
 
 .timeline {
     list-style: none;
-    padding: 0;
 }
 
 .timeline-item {
-    margin-bottom: 20px;
+    margin-bottom: 2rem; /* Spacing is now relative */
     border-left: 2px solid #ccc;
-    padding-left: 20px;
+    padding-left: 1.25rem; /* Relative padding */
     position: relative;
 }
 
 .timeline-icon {
     position: absolute;
-    left: -10px; 
+    left: -3vw; 
     top: 0;
-    font-size: 20px;
+    width: 6vw; /* Responsive width */
+    height: auto; 
 }
 
 .timeline h2 {
-    margin: 0 0 10px 0;
-    font-size: 18px;
-    color: #333;
+    margin: 0;
+    font-size: 1.125rem; /* Relative font size */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 4vw; /* Padding adjusted for responsiveness */
 }
 
 .year {
     background-color: #f0f0f0; 
-    padding: 0 5px;
+    padding: 0 0.5rem;
 }
 
 .timeline ul {
-    margin: 0;
-    padding-left: 20px;
+    padding-left: 5vw; /* Adjusted for responsiveness */
 }
 
 .timeline li {
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 .gallery {
     display: flex;
     overflow-x: auto; /* Enables horizontal scrolling */
-    margin-top: 10px;
-    padding-bottom: 10px; /* Adds space below the images */
+    margin-top: 1rem; /* Relative spacing */
+    margin-left: 4vw; /* Adjusted for viewport width */
+    padding-bottom: 1rem; /* Adds space below the images */
     white-space: nowrap; /* Keeps all images in a single line */
 }
 
 .gallery img {
     width: auto; 
-    height: 350px; 
+    height: 35vh; /* Height relative to viewport height */
     border-radius: 5px;
-    margin-right: 10px;
+    margin-right: 0.5rem; /* Relative margin */
 }
-
