@@ -46,17 +46,17 @@ body {
     padding-left: 0;
     width: 100%;
     text-align: left;
-    margin-left: 1rem; /* Adjusted for responsiveness */
+    margin-left: 1rem;
 }
 
 .navbar-menu li {
-    margin-bottom: 0.5rem; /* Relative unit for spacing */
+    margin-bottom: 0.5rem;
 }
 
 .navbar-menu a {
     text-decoration: none;
     color: #000;
-    font-size: 1.125rem; /* Slightly larger, scales with user settings */
+    font-size: 1.125rem;
 }
 
 .navbar-menu a:hover {
@@ -64,23 +64,26 @@ body {
     font-weight: bold;
 }
 
-.nav-tab-page, .home-page {
+.nav-tab-page {
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
     display: none;
     text-align: justify;
     text-justify: inter-word;
-    max-width: 65vw; /* 65% of the viewport width */
+    max-width: 65vw; 
     font-size: 1rem;
     color: #484d52;
     font-weight: 200;
 }
 
-.home-page {
-    display: block;
-}
 
+
+.home-page h1 {
+    display: block;
+    font-size: 80px;
+    text-align: center;
+}
 .nav-tab-page h1 {
     font-size: 3rem; /* Scales with viewport size */
 }
@@ -102,7 +105,7 @@ body {
 }
 
 .footer-icons .fa {
-    font-size: 1.25rem; /* Scales with user settings */
+    font-size: 1.25rem; 
     color: rgb(49, 47, 47); 
     text-decoration: none;
 }
@@ -112,9 +115,9 @@ body {
 }
 
 .timeline-item {
-    margin-bottom: 2rem; /* Spacing is now relative */
+    margin-bottom: 2rem; 
     border-left: 2px solid #ccc;
-    padding-left: 1.25rem; /* Relative padding */
+    padding-left: 1.25rem;
     position: relative;
 }
 
@@ -122,17 +125,17 @@ body {
     position: absolute;
     left: -3vw; 
     top: 0;
-    width: 6vw; /* Responsive width */
+    width: 6vw;
     height: auto; 
 }
 
 .timeline h2 {
     margin: 0;
-    font-size: 1.125rem; /* Relative font size */
+    font-size: 1.125rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 4vw; /* Padding adjusted for responsiveness */
+    padding-left: 4vw; 
 }
 
 .year {
@@ -141,7 +144,7 @@ body {
 }
 
 .timeline ul {
-    padding-left: 5vw; /* Adjusted for responsiveness */
+    padding-left: 5vw;
 }
 
 .timeline li {
@@ -164,3 +167,64 @@ body {
     border-radius: 5px;
     margin-right: 0.5rem; /* Relative margin */
 }
+
+.home-page {
+    margin-left: 16vw; 
+    background-image: url('../img/home.png');
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; 
+    background-repeat: no-repeat; /* Prevents repeating */
+    width: calc(100vw - 15vw + 1px); /* Adjusts the width to cover the remaining screen */
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    opacity: 1;
+}
+
+
+.welcome-message,
+.constant-name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.welcome-message {
+    top: 5%;
+    opacity: 0;
+    animation: fadeInText 2s forwards, slideUp 2s forwards;
+}
+
+.welcome-message p {
+    font-size: 4rem;
+    color: #2b2b33;
+    
+}
+
+.constant-name {
+    top: 1%;
+    font-size: 100px;
+    font-weight: bold;
+   
+    display: none;
+    animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); }
+    to { transform: translateY(0); }
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
