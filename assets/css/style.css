@@ -58,7 +58,7 @@ body {
 .navbar-menu a {
     text-decoration: none;
     color: #000;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .navbar-menu a:hover {
@@ -75,7 +75,14 @@ body {
     text-align: justify;
     text-justify: inter-word;
     max-width: 65%;
+    font-size: 16px;
     color: #484d52;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.nav-tab-page h1 {
+    font-size: 50px;
 }
 
 .home-page{
@@ -106,3 +113,62 @@ body {
     color: rgb(49, 47, 47); 
     text-decoration: none;
 }
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    border-left: 2px solid #ccc;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -10px; 
+    top: 0;
+    font-size: 20px;
+}
+
+.timeline h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.year {
+    background-color: #f0f0f0; 
+    padding: 0 5px;
+}
+
+.timeline ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.timeline li {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    margin-top: 10px;
+    padding-bottom: 10px; /* Adds space below the images */
+    white-space: nowrap; /* Keeps all images in a single line */
+}
+
+.gallery img {
+    width: auto; 
+    height: 350px; 
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
