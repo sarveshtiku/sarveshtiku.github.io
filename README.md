@@ -1,18 +1,11 @@
-**Project Title**
+**Personal website**
 ================
+
 
 **Description**
 ---------------
+Website that showcases my interests, projects and experiences.
 
-Travel app for android users.
 
-**Demo Link**
--------------
 
-[Link Text](https://drive.google.com/file/d/1ldB_73UGCHlmKnRBEEyY7yQgRVem_mmq/view)
-
-**Features**
-------------
-
-* List your project's features here.
 
