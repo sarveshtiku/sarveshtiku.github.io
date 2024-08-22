@@ -1,21 +1,20 @@
 body {
-    font-family: 'Kulim Park';
+    font-family: 'Kulim Park', sans-serif;
 }
 
 .navbar {
-    height: 90%;
-    margin-top: 30px;
-    width: 250px;
-    max-width: 15%; 
+    height: 90vh; /* 90% of the viewport height */
+    margin-top: 2vh;
+    width: 15vw; /* 15% of the viewport width */
+    max-width: 250px;
     position: fixed;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    border-right: #e4e2e2 solid 0.75px;
-    padding-left: 10px; 
-    padding-right: 10px; 
+    border-right: 1px solid #e4e2e2; /* Used 1px for consistency across devices */
+    padding: 0 1rem; /* Responsive padding */
     overflow-x: hidden;
 }
 
@@ -25,40 +24,39 @@ body {
     display: block;
 }
 
-.navbar-header a:hover {
-    cursor: pointer; 
-    color: #496178;
-}
-
 .navbar-header {
-    font-size: 14px;
+    font-size: 1rem; /* Scales with user settings */
     color: #aaa4a4;
     width: 100%;
-    margin-left: 20%; 
-    
+    margin-left: 1rem; /* Margin adjusted for consistency */
 }
+
 .navbar-header a {
     text-decoration: none;
     color: #aaa4a4;
 }
 
+.navbar-header a:hover {
+    cursor: pointer; 
+    color: #496178;
+}
 
 .navbar-menu {
     list-style-type: none;
     padding-left: 0;
     width: 100%;
     text-align: left;
-    margin-left: 20%;
+    margin-left: 1rem;
 }
 
 .navbar-menu li {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .navbar-menu a {
     text-decoration: none;
     color: #000;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .navbar-menu a:hover {
@@ -66,34 +64,32 @@ body {
     font-weight: bold;
 }
 
-
 .nav-tab-page {
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
+    padding: 1rem;
     display: none;
     text-align: justify;
     text-justify: inter-word;
-    max-width: 65%;
-    font-size: 16px;
+    max-width: 65vw; 
+    font-size: 1rem;
     color: #484d52;
     font-weight: 200;
-    font-style: normal;
 }
 
-.nav-tab-page h1 {
-    font-size: 50px;
-}
 
-.home-page{
+
+.home-page h1 {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    text-align: justify;
-    text-justify: inter-word;
-    max-width: 65%;
-    color: #484d52;
+    font-size: 80px;
+    text-align: center;
+}
+.nav-tab-page h1 {
+    font-size: 3rem; /* Scales with viewport size */
+}
+
+.nav-tab-page p {
+    line-height: 1.5;
 }
 
 .footer-icons {
@@ -105,70 +101,130 @@ body {
     display: flex;
     justify-content: space-evenly; 
     align-items: center;
-    gap: 1px;
+    gap: 0.5rem;
 }
 
 .footer-icons .fa {
-    font-size: 20px; 
+    font-size: 1.25rem; 
     color: rgb(49, 47, 47); 
     text-decoration: none;
 }
 
 .timeline {
     list-style: none;
-    padding: 0;
 }
 
 .timeline-item {
-    margin-bottom: 20px;
+    margin-bottom: 2rem; 
     border-left: 2px solid #ccc;
-    padding-left: 20px;
+    padding-left: 1.25rem;
     position: relative;
 }
 
 .timeline-icon {
     position: absolute;
-    left: -10px; 
+    left: -3vw; 
     top: 0;
-    font-size: 20px;
+    width: 6vw;
+    height: auto; 
 }
 
 .timeline h2 {
-    margin: 0 0 10px 0;
-    font-size: 18px;
-    color: #333;
+    margin: 0;
+    font-size: 1.125rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 4vw; 
 }
 
 .year {
     background-color: #f0f0f0; 
-    padding: 0 5px;
+    padding: 0 0.5rem;
 }
 
 .timeline ul {
-    margin: 0;
-    padding-left: 20px;
+    padding-left: 5vw;
 }
 
 .timeline li {
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 .gallery {
     display: flex;
     overflow-x: auto; /* Enables horizontal scrolling */
-    margin-top: 10px;
-    padding-bottom: 10px; /* Adds space below the images */
+    margin-top: 1rem; /* Relative spacing */
+    margin-left: 4vw; /* Adjusted for viewport width */
+    padding-bottom: 1rem; /* Adds space below the images */
     white-space: nowrap; /* Keeps all images in a single line */
 }
 
 .gallery img {
     width: auto; 
-    height: 350px; 
+    height: 35vh; /* Height relative to viewport height */
     border-radius: 5px;
-    margin-right: 10px;
+    margin-right: 0.5rem; /* Relative margin */
 }
+
+.home-page {
+    margin-left: 16vw; 
+    background-image: url('../img/home.png');
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; 
+    background-repeat: no-repeat; /* Prevents repeating */
+    width: calc(100vw - 15vw + 1px); /* Adjusts the width to cover the remaining screen */
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    opacity: 1;
+}
+
+
+.welcome-message,
+.constant-name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.welcome-message {
+    top: 5%;
+    opacity: 0;
+    animation: fadeInText 2s forwards, slideUp 2s forwards;
+}
+
+.welcome-message p {
+    font-size: 4rem;
+    color: #2b2b33;
+    
+}
+
+.constant-name {
+    top: 1%;
+    font-size: 100px;
+    font-weight: bold;
+   
+    display: none;
+    animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); }
+    to { transform: translateY(0); }
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 
