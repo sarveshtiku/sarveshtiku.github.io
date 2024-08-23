@@ -82,7 +82,7 @@ window.onresize = randomizeImagePosition;
 
 document.addEventListener("DOMContentLoaded", function() {
     const welcomeText = document.getElementById('welcome-text');
-    const messages = ["Yo, what's good? 👋", "Glad you pulled up! ", "You're chillin' at 🛋️", "Sarvesh Tiku's crib 🏠", "Feel free to vibe out "];
+    const messages = ["Hey There 👋", "You're chillin' at 🛋️", "Sarvesh Tiku's crib 🏠", "Feel free to look around"];
 
 
     let messageIndex = 0;
