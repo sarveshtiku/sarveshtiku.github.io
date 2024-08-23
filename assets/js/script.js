@@ -56,30 +56,6 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 
-function randomizeImagePosition() {
-    const images = document.querySelectorAll('.full-screen-gallery img');
-
-    images.forEach(img => {
-        const randomX = Math.floor(Math.random() * (window.innerWidth - img.clientWidth));
-        const randomY = Math.floor(Math.random() * (window.innerHeight - img.clientHeight));
-
-        img.style.left = `${randomX}px`;
-        img.style.top = `${randomY}px`;
-
-        // Randomize size (optional)
-        const randomSize = Math.random() * 10 + 10; // Between 10vw and 20vw
-        img.style.width = `${randomSize}vw`;
-        img.style.height = 'auto';
-    });
-}
-
-// Run the function once the page is loaded
-window.onload = randomizeImagePosition;
-
-// Run the function on window resize to adjust positions
-window.onresize = randomizeImagePosition;
-
-
 document.addEventListener("DOMContentLoaded", function() {
     const welcomeText = document.getElementById('welcome-text');
     const messages = ["Hey There 👋", "You're chillin' at 🛋️", "Sarvesh Tiku's crib 🏠", "Feel free to look around"];
